@@ -14,22 +14,23 @@
     
     <!-- ===== SECTION: SEO META TAGS ===== -->
     <!-- Primary Meta Tags -->
-    <title>ShiftSync Pro - World's Most Advanced Shift Scheduler for All Industries</title>
-    <meta name="description" content="Mathematically perfect shift scheduling with 20+ pattern algorithms. AI-powered fairness, compliance tracking, and intelligent optimization. Free forever.">
+    <title>ShiftSync - World's Most Advanced Shift Scheduler for All Industries</title>
+    <meta name="description" content="Mathematically perfect shift scheduling with 20+ pattern algorithms. AI-powered fairness, compliance tracking, and intelligent optimization. Free forever.No registration.">
     
     <!-- Keywords -->
     <meta name="keywords" content="intelligent shift scheduler, Panama plan, 4x4 schedule, Dupont shift, Pitman schedule, 4-10 shift, roster generator, advanced scheduling software, free shift planner">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="ShiftSync Pro - Advanced AI Shift Scheduler">
+    <meta property="og:title" content="ShiftSync - Advanced AI Shift Scheduler">
     <meta property="og:description" content="Mathematically perfect scheduling with 20+ algorithms. Used by hospitals, factories, and 24/7 operations worldwide.">
+    <meta property="og:description" content="Used by 5,000+ businesses worldwide. Create fair schedules in 60 seconds.">
     <meta property="og:image" content="https://shiftsync.world/social-preview.png">
     <meta property="og:url" content="https://shiftsync.world">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ShiftSync Pro - Advanced Shift Scheduler">
+    <meta name="twitter:title" content="ShiftSync - Advanced Shift Scheduler">
     <meta name="twitter:description" content="Mathematically perfect scheduling with 20+ algorithms">
     <meta name="twitter:image" content="https://shiftsync.world/twitter-preview.png">
     
@@ -44,7 +45,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "ShiftSync Pro",
+      "name": "ShiftSync",
       "description": "Advanced AI-powered shift scheduler with 20+ mathematical algorithms",
       "url": "https://shiftsync.world",
       "applicationCategory": "BusinessApplication",
@@ -156,6 +157,24 @@
             font-size: 1.2rem;
             opacity: 0.95;
             margin-top: 8px;
+        }
+        
+        .industry-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            max-width: 800px;
+        }
+        
+        .industry-tag {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: default;
         }
         
         .intelligence-badge {
@@ -576,6 +595,10 @@
             .form-row {
                 grid-template-columns: 1fr;
             }
+            
+            .industry-tags {
+                max-width: 100%;
+            }
         }
         
         @media (max-width: 768px) {
@@ -595,6 +618,10 @@
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 15px;
+            }
+            
+            .industry-tags {
+                justify-content: center;
             }
         }
     </style>
@@ -617,8 +644,22 @@
                         <i class="fas fa-brain"></i>
                     </div>
                     <div class="logo-text">
-                        <h1>ShiftSync Pro</h1>
-                        <p class="tagline">Mathematically Perfect Shift Scheduling with AI Intelligence</p>
+                        <h1>ShiftSync</h1>
+                        <p class="tagline">Fair shifts for every worker. Perfect AI-powered shift scheduling.</p>
+                        <div class="industry-tags">
+                            <div class="industry-tag">Hospitals</div>
+                            <div class="industry-tag">Factories</div>
+                            <div class="industry-tag">Hotels</div>
+                            <div class="industry-tag">Restaurants</div>
+                            <div class="industry-tag">Retail</div>
+                            <div class="industry-tag">Manufacturing</div>
+                            <div class="industry-tag">Logistics</div>
+                            <div class="industry-tag">Healthcare</div>
+                            <div class="industry-tag">Security</div>
+                            <div class="industry-tag">Transportation</div>
+                            <div class="industry-tag">Call Centers</div>
+                            <div class="industry-tag">Emergency Services</div>
+                        </div>
                     </div>
                 </div>
                 
@@ -959,17 +1000,7 @@
                         </div>
                         
                         <div class="signature-box">
-                            <label>Supervisor Approval:</label>
-                            <div style="margin-top: 40px; border-top: 1px solid #cbd5e1; padding-top: 10px;">
-                                <p>Name: _______________________</p>
-                                <p>Rank: _______________________</p>
-                                <p>Signature: __________________</p>
-                                <p>Date: _______________________</p>
-                            </div>
-                        </div>
-                        
-                        <div class="signature-box">
-                            <label>Unit Coordinator:</label>
+                            <label>Supervisor/Unit Coordinator Approval:</label>
                             <div style="margin-top: 40px; border-top: 1px solid #cbd5e1; padding-top: 10px;">
                                 <p>Name: _______________________</p>
                                 <p>Rank: _______________________</p>
@@ -982,7 +1013,7 @@
             </div>
         </div>
 
-        <!-- DONATION SECTION (Remains from previous code) -->
+        <!-- DONATION SECTION -->
         <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); 
                     padding: 50px 30px; 
                     text-align: center;
@@ -1004,26 +1035,26 @@
             
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px;">
                 
-                <a href="#" 
+                <a href="https://pay.google.com" 
                    target="_blank" 
                    rel="noopener"
                    style="display: inline-flex; 
                           align-items: center; 
                           gap: 12px;
                           padding: 16px 32px;
-                          background: linear-gradient(135deg, #635bff 0%, #5433ff 100%);
+                          background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);
                           color: white;
                           border-radius: 15px;
                           text-decoration: none;
                           font-weight: 600;
                           font-size: 1.1rem;
                           transition: all 0.3s;
-                          box-shadow: 0 5px 20px rgba(99, 91, 255, 0.2);">
-                    <i class="fas fa-credit-card"></i>
-                    Donate with Card
+                          box-shadow: 0 5px 20px rgba(66, 133, 244, 0.2);">
+                    <i class="fab fa-google"></i>
+                    Donate with Google Pay
                 </a>
                 
-                <a href="#" 
+                <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID" 
                    target="_blank" 
                    rel="noopener"
                    style="display: inline-flex; 
@@ -1042,9 +1073,27 @@
                     Support via PayPal
                 </a>
                 
+                <button onclick="toggleGiftCard()"
+                        style="display: inline-flex; 
+                               align-items: center; 
+                               gap: 12px;
+                               padding: 16px 32px;
+                               background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+                               color: white;
+                               border-radius: 15px;
+                               border: none;
+                               font-weight: 600;
+                               font-size: 1.1rem;
+                               cursor: pointer;
+                               transition: all 0.3s;
+                               box-shadow: 0 5px 20px rgba(139, 92, 246, 0.2);">
+                    <i class="fas fa-gift"></i>
+                    Send eGift Card
+                </button>
+                
             </div>
             
-            <!-- Crypto Option -->
+            <!-- Crypto & Gift Card Options -->
             <div style="margin-top: 20px;">
                 <button onclick="toggleCrypto()" 
                         style="background: none;
@@ -1054,45 +1103,48 @@
                                font-size: 1rem;
                                padding: 12px 24px;
                                border-radius: 10px;
-                               background: rgba(5, 150, 105, 0.1);">
-                    <i class="fas fa-coins"></i> Prefer cryptocurrency?
+                               background: rgba(5, 150, 105, 0.1);
+                               margin-right: 10px;">
+                    <i class="fas fa-coins"></i> Cryptocurrency Options
                 </button>
-                
-                <div id="cryptoOptions" style="display: none; margin-top: 25px; animation: fadeIn 0.5s;">
-                    <div style="background: white; 
-                                padding: 25px; 
-                                border-radius: 15px; 
-                                max-width: 600px; 
-                                margin: 0 auto;
-                                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                                border: 2px solid #86efac;">
-                        
-                        <p style="color: #4b5563; margin-bottom: 20px; text-align: center;">
-                            <i class="fas fa-heart" style="color: #ef4444;"></i> 
-                            <strong style="color: #166534;">Thank you!</strong> Crypto donations help us stay independent and green.
-                        </p>
+            </div>
+            
+            <div id="cryptoOptions" style="display: none; margin-top: 25px; animation: fadeIn 0.5s;">
+                <div style="background: white; 
+                            padding: 25px; 
+                            border-radius: 15px; 
+                            max-width: 800px; 
+                            margin: 0 auto;
+                            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                            border: 2px solid #86efac;">
+                    
+                    <p style="color: #4b5563; margin-bottom: 20px; text-align: center;">
+                        <i class="fas fa-heart" style="color: #ef4444;"></i> 
+                        <strong style="color: #166534;">Thank you!</strong> Crypto donations help us stay independent and green.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                         
                         <div style="background: #f0f9ff; 
                                     padding: 20px; 
                                     border-radius: 12px; 
-                                    margin-bottom: 15px;
                                     border: 1px solid #bae6fd;">
                             <strong style="color: #2775ca; display: block; margin-bottom: 10px;">
-                                <i class="fab fa-usdc"></i> USDC (Solana):
+                                <i class="fas fa-coins"></i> USDC (TRC20):
                             </strong>
                             <div style="display: flex; gap: 10px; align-items: center;">
-                                <code id="usdcAddress" 
+                                <code id="usdcTrc20" 
                                       style="flex: 1; 
                                              background: white; 
                                              padding: 12px; 
                                              border-radius: 10px; 
-                                             font-size: 0.9rem; 
+                                             font-size: 0.85rem; 
                                              overflow: hidden; 
                                              text-overflow: ellipsis;
                                              border: 1px solid #cbd5e1;">
-                                    YOUR_SOLANA_ADDRESS_HERE
+                                    TAKkRRxbWE3Da4cViHuwHcpYp2eJ7ck3kp
                                 </code>
-                                <button onclick="copyCryptoAddress('usdcAddress')"
+                                <button onclick="copyCryptoAddress('usdcTrc20')"
                                         style="padding: 12px 20px;
                                                background: #3b82f6;
                                                color: white;
@@ -1111,21 +1163,21 @@
                                     border-radius: 12px;
                                     border: 1px solid #bae6fd;">
                             <strong style="color: #0052ff; display: block; margin-bottom: 10px;">
-                                <i class="fab fa-paypal"></i> PYUSD:
+                                <i class="fab fa-ethereum"></i> Ethereum (ETH):
                             </strong>
                             <div style="display: flex; gap: 10px; align-items: center;">
-                                <code id="pyusdAddress" 
+                                <code id="ethAddress" 
                                       style="flex: 1; 
                                              background: white; 
                                              padding: 12px; 
                                              border-radius: 10px; 
-                                             font-size: 0.9rem; 
+                                             font-size: 0.85rem; 
                                              overflow: hidden; 
                                              text-overflow: ellipsis;
                                              border: 1px solid #cbd5e1;">
-                                    YOUR_ETHEREUM_ADDRESS_HERE
+                                    0x5C72D08357DFF83Bc72bF20E1ce2635282B74b6F
                                 </code>
-                                <button onclick="copyCryptoAddress('pyusdAddress')"
+                                <button onclick="copyCryptoAddress('ethAddress')"
                                         style="padding: 12px 20px;
                                                background: #3b82f6;
                                                color: white;
@@ -1138,12 +1190,231 @@
                                 </button>
                             </div>
                         </div>
+                        
+                        <div style="background: #f0f9ff; 
+                                    padding: 20px; 
+                                    border-radius: 12px;
+                                    border: 1px solid #bae6fd;">
+                            <strong style="color: #00d4aa; display: block; margin-bottom: 10px;">
+                                <i class="fas fa-network-wired"></i> Solana (SOL):
+                            </strong>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <code id="solAddress" 
+                                      style="flex: 1; 
+                                             background: white; 
+                                             padding: 12px; 
+                                             border-radius: 10px; 
+                                             font-size: 0.85rem; 
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             border: 1px solid #cbd5e1;">
+                                    EFmr8rwar9ABW4ViEd3jd162xaJTABxsby3VVK5dcWQx
+                                </code>
+                                <button onclick="copyCryptoAddress('solAddress')"
+                                        style="padding: 12px 20px;
+                                               background: #3b82f6;
+                                               color: white;
+                                               border: none;
+                                               border-radius: 10px;
+                                               cursor: pointer;
+                                               font-weight: 600;
+                                               transition: all 0.3s;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f0f9ff; 
+                                    padding: 20px; 
+                                    border-radius: 12px;
+                                    border: 1px solid #bae6fd;">
+                            <strong style="color: #0088cc; display: block; margin-bottom: 10px;">
+                                <i class="fas fa-bolt"></i> Toncoin (TON):
+                            </strong>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <code id="tonAddress" 
+                                      style="flex: 1; 
+                                             background: white; 
+                                             padding: 12px; 
+                                             border-radius: 10px; 
+                                             font-size: 0.85rem; 
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             border: 1px solid #cbd5e1;">
+                                    UQDFWGn7dASEOrAM_9s3W6iIzxApfuzMV1cVXn5OdDCHk4GJ
+                                </code>
+                                <button onclick="copyCryptoAddress('tonAddress')"
+                                        style="padding: 12px 20px;
+                                               background: #3b82f6;
+                                               color: white;
+                                               border: none;
+                                               border-radius: 10px;
+                                               cursor: pointer;
+                                               font-weight: 600;
+                                               transition: all 0.3s;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f0f9ff; 
+                                    padding: 20px; 
+                                    border-radius: 12px;
+                                    border: 1px solid #bae6fd;">
+                            <strong style="color: #f0b90b; display: block; margin-bottom: 10px;">
+                                <i class="fas fa-code"></i> Pi Network (Pi):
+                            </strong>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <code id="piAddress" 
+                                      style="flex: 1; 
+                                             background: white; 
+                                             padding: 12px; 
+                                             border-radius: 10px; 
+                                             font-size: 0.85rem; 
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             border: 1px solid #cbd5e1;">
+                                    GCIPVGGRXWKXI4ZIQCPT7HNNSGC6VHH6IO4DKFCQRLKMZMBNZETG4BAN
+                                </code>
+                                <button onclick="copyCryptoAddress('piAddress')"
+                                        style="padding: 12px 20px;
+                                               background: #3b82f6;
+                                               color: white;
+                                               border: none;
+                                               border-radius: 10px;
+                                               cursor: pointer;
+                                               font-weight: 600;
+                                               transition: all 0.3s;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f0f9ff; 
+                                    padding: 20px; 
+                                    border-radius: 12px;
+                                    border: 1px solid #bae6fd;">
+                            <strong style="color: #ff6b35; display: block; margin-bottom: 10px;">
+                                <i class="fab fa-usdc"></i> USDC (Base):
+                            </strong>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <code id="usdcBase" 
+                                      style="flex: 1; 
+                                             background: white; 
+                                             padding: 12px; 
+                                             border-radius: 10px; 
+                                             font-size: 0.85rem; 
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             border: 1px solid #cbd5e1;">
+                                    0x5C72D08357DFF83Bc72bF20E1ce2635282B74b6F
+                                </code>
+                                <button onclick="copyCryptoAddress('usdcBase')"
+                                        style="padding: 12px 20px;
+                                               background: #3b82f6;
+                                               color: white;
+                                               border: none;
+                                               border-radius: 10px;
+                                               cursor: pointer;
+                                               font-weight: 600;
+                                               transition: all 0.3s;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f0f9ff; 
+                                    padding: 20px; 
+                                    border-radius: 12px;
+                                    border: 1px solid #bae6fd;">
+                            <strong style="color: #f0b90b; display: block; margin-bottom: 10px;">
+                                <i class="fab fa-btc"></i> BNB Smart Chain (BEP20):
+                            </strong>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <code id="bscAddress" 
+                                      style="flex: 1; 
+                                             background: white; 
+                                             padding: 12px; 
+                                             border-radius: 10px; 
+                                             font-size: 0.85rem; 
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             border: 1px solid #cbd5e1;">
+                                    0x97a0a4cd3c25df745403cf368784bc1022621162
+                                </code>
+                                <button onclick="copyCryptoAddress('bscAddress')"
+                                        style="padding: 12px 20px;
+                                               background: #3b82f6;
+                                               color: white;
+                                               border: none;
+                                               border-radius: 10px;
+                                               cursor: pointer;
+                                               font-weight: 600;
+                                               transition: all 0.3s;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- eGift Card Option -->
+            <div id="giftCardOptions" style="display: none; margin-top: 25px; animation: fadeIn 0.5s;">
+                <div style="background: white; 
+                            padding: 25px; 
+                            border-radius: 15px; 
+                            max-width: 600px; 
+                            margin: 20px auto 0;
+                            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                            border: 2px solid #f3e8ff;">
+                    
+                    <h3 style="color: #7c3aed; margin-bottom: 15px;">
+                        <i class="fas fa-gift"></i> Send eGift Card
+                    </h3>
+                    
+                    <p style="color: #4b5563; margin-bottom: 20px; text-align: center;">
+                        Gift cards are a great way to support us! You can send Amazon, Google Play, Apple, or any other gift cards.
+                    </p>
+                    
+                    <div style="background: #faf5ff; padding: 20px; border-radius: 12px; border: 1px solid #e9d5ff;">
+                        <strong style="color: #7c3aed; display: block; margin-bottom: 15px;">
+                            <i class="fas fa-envelope"></i> Email for Gift Cards:
+                        </strong>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <code id="giftCardEmail" 
+                                  style="flex: 1; 
+                                         background: white; 
+                                         padding: 12px; 
+                                         border-radius: 10px; 
+                                         font-size: 0.9rem; 
+                                         overflow: hidden; 
+                                         text-overflow: ellipsis;
+                                         border: 1px solid #cbd5e1;">
+                                senarysystems.com@gmail.com
+                            </code>
+                            <button onclick="copyCryptoAddress('giftCardEmail')"
+                                    style="padding: 12px 20px;
+                                           background: #8b5cf6;
+                                           color: white;
+                                           border: none;
+                                           border-radius: 10px;
+                                           cursor: pointer;
+                                           font-weight: 600;
+                                           transition: all 0.3s;">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <p style="color: #64748b; font-size: 0.85rem; margin-top: 10px;">
+                            <i class="fas fa-info-circle"></i> Please email the gift card code to this address. We'll send you a thank you note!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- MAIN FOOTER (Remains from previous code) -->
+        <!-- MAIN FOOTER -->
         <footer style="background: #1e293b; color: #cbd5e1; padding: 50px 40px;">
             
             <div style="max-width: 1200px; margin: 0 auto;">
@@ -1151,11 +1422,11 @@
                     
                     <div>
                         <h3 style="color: white; margin-bottom: 20px; font-size: 1.3rem;">
-                            <i class="fas fa-sync-alt"></i> ShiftSync Pro
+                            <i class="fas fa-sync-alt"></i> ShiftSync
                         </h3>
                         <p style="color: #94a3b8; line-height: 1.6;">
-                            Advanced AI-powered scheduling with mathematical optimization. 
-                            Free forever for all organizations.
+                            Advanced AI-powered scheduling with mathematical optimization. Better and seamless work for everyone. 
+                            ShiftSync is free forever for all organizations. Trusted by 5,000+ Businesses.
                         </p>
                     </div>
                     
@@ -1186,7 +1457,7 @@
                 
                 <div style="border-top: 1px solid #334155; padding-top: 30px; text-align: center;">
                     <p style="font-size: 1.1rem; margin-bottom: 15px; color: white;">
-                        ShiftSync Pro © 2024 • Advanced AI Scheduling • Free Forever
+                        ShiftSync © 2024 • Advanced AI Scheduling • Free Forever
                     </p>
                     
                     <p style="color: #94a3b8; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.6;">
@@ -1199,7 +1470,7 @@
                         <i class="fas fa-leaf" style="color: #86efac;"></i> 
                         Powered by renewable energy • 
                         <i class="fas fa-heart" style="color: #f87171;"></i> 
-                        Made with mathematical precision
+                        Made with mathematical precision, crafted with love and care for the working world.
                     </p>
                 </div>
             </div>
@@ -2212,11 +2483,11 @@
                 timestamp: DateTime.now().toISO()
             };
             
-            localStorage.setItem('shiftsync_pro_data', JSON.stringify(data));
+            localStorage.setItem('shiftsync_data', JSON.stringify(data));
         }
 
         function loadSavedData() {
-            const saved = localStorage.getItem('shiftsync_pro_data');
+            const saved = localStorage.getItem('shiftsync_data');
             if (saved) {
                 const data = JSON.parse(saved);
                 staffMembers = data.staffMembers || [];
@@ -2239,6 +2510,50 @@
             }
         }
 
+        // ========== DONATION FUNCTIONS ==========
+        function toggleCrypto() {
+            const options = document.getElementById('cryptoOptions');
+            const giftCard = document.getElementById('giftCardOptions');
+            const isHidden = options.style.display === 'none' || options.style.display === '';
+            options.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                giftCard.style.display = 'none';
+            }
+        }
+        
+        function toggleGiftCard() {
+            const giftCard = document.getElementById('giftCardOptions');
+            const crypto = document.getElementById('cryptoOptions');
+            const isHidden = giftCard.style.display === 'none' || giftCard.style.display === '';
+            giftCard.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                crypto.style.display = 'none';
+            }
+        }
+        
+        function copyCryptoAddress(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent.trim();
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.textContent;
+                element.textContent = 'Copied! ✓';
+                element.style.color = '#10b981';
+                element.style.fontWeight = '600';
+                
+                setTimeout(() => {
+                    element.textContent = originalText;
+                    element.style.color = '';
+                    element.style.fontWeight = '';
+                }, 2000);
+                
+                showToast('Address copied to clipboard', 'success');
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                showToast('Please copy the address manually', 'warning');
+            });
+        }
+
         // ========== EXPORT FUNCTIONS ==========
         function exportPDF() {
             if (rosterData.length === 0) {
@@ -2252,7 +2567,7 @@
             // Add header
             doc.setFontSize(20);
             doc.setTextColor(59, 130, 246);
-            doc.text('ShiftSync Pro - Advanced Roster', 20, 20);
+            doc.text('ShiftSync - Advanced Roster', 20, 20);
             
             // Add metadata
             doc.setFontSize(12);
@@ -2346,7 +2661,7 @@
             printWindow.document.write(`
                 <html>
                 <head>
-                    <title>ShiftSync Pro Roster - Print</title>
+                    <title>ShiftSync Roster - Print</title>
                     <style>
                         body { font-family: Arial; padding: 20px; }
                         h1 { color: #3b82f6; }
@@ -2361,7 +2676,7 @@
                     </style>
                 </head>
                 <body>
-                    <h1>ShiftSync Pro Roster</h1>
+                    <h1>ShiftSync Roster</h1>
                     <p><strong>Organization:</strong> ${document.getElementById('orgName').value || 'N/A'}</p>
                     <p><strong>Period:</strong> ${rosterData.length} days</p>
                     
@@ -2403,34 +2718,6 @@
             showToast('Roster saved to browser storage', 'success');
         }
 
-        // ========== DONATION FUNCTIONS (from previous code) ==========
-        function toggleCrypto() {
-            const options = document.getElementById('cryptoOptions');
-            const isHidden = options.style.display === 'none' || options.style.display === '';
-            options.style.display = isHidden ? 'block' : 'none';
-        }
-        
-        function copyCryptoAddress(elementId) {
-            const element = document.getElementById(elementId);
-            const text = element.textContent.trim();
-            
-            navigator.clipboard.writeText(text).then(() => {
-                const originalText = element.textContent;
-                element.textContent = 'Copied! ✓';
-                element.style.color = '#10b981';
-                element.style.fontWeight = '600';
-                
-                setTimeout(() => {
-                    element.textContent = originalText;
-                    element.style.color = '';
-                    element.style.fontWeight = '';
-                }, 2000);
-            }).catch(err => {
-                console.error('Copy failed:', err);
-                alert('Please copy the address manually');
-            });
-        }
-        
         // Add fade-in animation
         const style = document.createElement('style');
         style.textContent = `
