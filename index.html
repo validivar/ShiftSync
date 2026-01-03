@@ -37,8 +37,9 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://shiftsync.world">
     
-    <!-- AdSense Verification -->
-    <!-- <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX"> -->
+    <!-- AdSense Auto Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8822656067358458"
+     crossorigin="anonymous"></script>
     
     <!-- ===== SECTION: STRUCTURED DATA ===== -->
     <script type="application/ld+json">
@@ -187,6 +188,32 @@
             margin-top: 15px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* ===== AD STYLES ===== */
+        .ad-container {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        .ad-label {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .adsbygoogle {
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         /* ===== MAIN APP LAYOUT ===== */
@@ -525,6 +552,11 @@
         .shift-M { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
         .shift-A { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
         .shift-N { background: #fce7f3; color: #9d174d; border: 1px solid #f9a8d4; }
+        .shift-N-2N2O { background: #1e3a8a; color: white; border: 1px solid #3b82f6; font-weight: 700; }
+        .shift-N-3N3O { background: #1e40af; color: white; border: 1px solid #60a5fa; font-weight: 700; }
+        .shift-N-4N4O { background: #1d4ed8; color: white; border: 1px solid #93c5fd; font-weight: 700; }
+        .shift-N-5N5O { background: #3b82f6; color: white; border: 1px solid #bfdbfe; font-weight: 700; }
+        .shift-N-7N7O { background: #60a5fa; color: white; border: 1px solid #dbeafe; font-weight: 700; }
         .shift-O { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
         .shift-L { background: #f3e8ff; color: #6b21a8; border: 1px solid #c4b5fd; }
         .shift-C { background: #fef3c7; color: #92400e; border: 1px dashed #f59e0b; }
@@ -632,11 +664,26 @@
             data-ad-client="ca-pub-8822656067358458">
     </amp-auto-ads>
     
+    <!-- Header Ad - ShiftSync_Header_Responsive -->
+    <div class="ad-container" style="margin: 0 auto 20px; max-width: 1200px;">
+        <div class="ad-label">Advertisement</div>
+        <!-- ShiftSync_Header_Responsive -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8822656067358458"
+             data-ad-slot="2487115772"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
     <div class="container">
         <!-- HEADER -->
         <header>
             <div class="pro-badge">
-                <i class="fas fa-crown"></i> PRO VERSION - FREE FOREVER
+                <i class="fas fa-crown"></i>Free Forever
             </div>
             <div class="header-content">
                 <div class="logo">
@@ -647,18 +694,18 @@
                         <h1>ShiftSync</h1>
                         <p class="tagline">Fair shifts for every worker. Perfect AI-powered shift scheduling.</p>
                         <div class="industry-tags">
-                            <div class="industry-tag">Hospitals</div>
-                            <div class="industry-tag">Factories</div>
-                            <div class="industry-tag">Hotels</div>
-                            <div class="industry-tag">Restaurants</div>
-                            <div class="industry-tag">Retail</div>
-                            <div class="industry-tag">Manufacturing</div>
-                            <div class="industry-tag">Logistics</div>
-                            <div class="industry-tag">Healthcare</div>
-                            <div class="industry-tag">Security</div>
-                            <div class="industry-tag">Transportation</div>
-                            <div class="industry-tag">Call Centers</div>
-                            <div class="industry-tag">Emergency Services</div>
+                            <div class="industry-tag">Health & Social Care</div>
+                            <div class="industry-tag">Manufacturing & Production</div>
+                            <div class="industry-tag">Military & Security</div>
+                            <div class="industry-tag">Retail & Warehouses</div>
+                            <div class="industry-tag">Learning & Research Institutions</div>
+                            <div class="industry-tag">Customer & Emergency Services</div>
+                            <div class="industry-tag">Non-Governmental Organizations</div>
+                            <div class="industry-tag">Financial & Legal firms</div>
+                            <div class="industry-tag">Utility & Infrastructure</div>
+                            <div class="industry-tag">Transportation & Logistics</div>
+                            <div class="industry-tag">Governments & Agencies</div>
+                            <div class="industry-tag">Large Scale Businesses</div>
                         </div>
                     </div>
                 </div>
@@ -727,7 +774,7 @@
                             <option value="60hour">60-Hourly</option>
                             <option value="72hour">72-Hourly</option>
                             <option value="80hour">80-Hourly (Maximum)</option>
-                            <option value="mixed">Mixed Shifts (8hr + 12hr)</option>
+                            <option value="mixed">Mixed Shifts (8hr + 12hr Extended Nights)</option>
                         </select>
                     </div>
                     
@@ -846,6 +893,7 @@
                                 <option value="temporal">Temporal</option>
                                 <option value="voluntary">Voluntary</option>
                                 <option value="contract">Contract</option>
+                                <option value="mixed">Mixed</option>
                             </select>
                         </div>
                     </div>
@@ -890,6 +938,21 @@
                     </div>
                 </div>
 
+                <!-- Sidebar Ad 1 - ShiftSync_Sidebar_Control_Responsive -->
+                <div class="ad-container" style="margin-top: 30px;">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- ShiftSync_Sidebar_Control_Responsive -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout-key="-fb+5w+4e-db+86"
+                         data-ad-client="ca-pub-8822656067358458"
+                         data-ad-slot="9982462410"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
                 <!-- Generate Button -->
                 <div class="loading" id="loading">
                     <i class="fas fa-cog"></i>
@@ -899,14 +962,6 @@
                 <button class="btn btn-intelligent" onclick="generateIntelligentRoster()">
                     <i class="fas fa-brain"></i> Generate Intelligent Roster
                 </button>
-
-                <!-- Ad Space -->
-                <div class="ad-space" id="ad-space-1" style="margin-top: 30px;">
-                    <h4><i class="fas fa-ad"></i> Advertisement</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
-                        Advertisement supports free access
-                    </p>
-                </div>
             </div>
 
             <!-- ROSTER DISPLAY -->
@@ -958,6 +1013,21 @@
                     </div>
                 </div>
 
+                <!-- Sidebar Ad 2 - ShiftSync_Sidebar_Roster_Responsive -->
+                <div class="ad-container" style="margin: 40px 0;">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- ShiftSync_Sidebar_Roster_Responsive -->
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-8822656067358458"
+                         data-ad-slot="8359563014"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
                 <!-- Export Options -->
                 <div class="button-group" style="margin-top: 40px;">
                     <button class="btn-export" onclick="exportPDF()">
@@ -972,14 +1042,6 @@
                     <button class="btn-export" onclick="saveRoster()">
                         <i class="fas fa-save"></i> Save Template
                     </button>
-                </div>
-
-                <!-- Ad Space -->
-                <div class="ad-space" id="ad-space-2" style="margin: 40px 0; text-align: center;">
-                    <h4><i class="fas fa-ad"></i> Advertisement</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
-                        Advertisement • Supports free scheduling tools
-                    </p>
                 </div>
 
                 <!-- Roster Footer -->
@@ -1011,6 +1073,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Footer Ad - ShiftSync_Footer_Responsive -->
+        <div class="ad-container" style="margin: 40px auto; max-width: 1200px;">
+            <div class="ad-label">Advertisement</div>
+            <!-- ShiftSync_Footer_Responsive -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-8822656067358458"
+                 data-ad-slot="3242967702"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
 
         <!-- DONATION SECTION -->
@@ -1442,6 +1518,9 @@
                             <a href="/contact.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s;">
                                 <i class="fas fa-envelope"></i> Contact
                             </a>
+                            <a href="terms.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s;">
+                                <i class="fas fa-file-contract"></i> Terms & Privacy
+                           </a>
                         </div>
                     </div>
                     
@@ -1557,7 +1636,50 @@
                 cycle: 7,
                 pattern: [0,0,0,0,1,1,0],
                 hours: 48
+            },
+            'mixed': {
+               name: 'Mixed 8-12 Hour Schedule',
+               description: 'Combines 8-hour and 12-hour shifts with varying night duty patterns: 2N/2O, 3N/3O, 4N/4O, 5N/5O, 7N/7O (Nights/Off). 60% staff on standard 8-hour shifts, 40% on extended 12-hour night duties.',
+               cycle: 28,
+               patterns: {
+              '8hour': {
+                name: '8-Hour Standard',
+                shifts: ['M', 'A', 'N', 'O'],
+                hours: 8
+            },
+            '12hour_2n2o': {
+                name: '12-Hour (2N/2O)',
+                description: '2 night shifts (12h) followed by 2 days off',
+                pattern: ['N', 'N', 'O', 'O'],
+                hours: 12
+            },
+            '12hour_3n3o': {
+                name: '12-Hour (3N/3O)',
+                description: '3 night shifts (12h) followed by 3 days off',
+                pattern: ['N', 'N', 'N', 'O', 'O', 'O'],
+                hours: 12
+            },
+            '12hour_4n4o': {
+                name: '12-Hour (4N/4O)',
+                description: '4 night shifts (12h) followed by 4 days off',
+                pattern: ['N', 'N', 'N', 'N', 'O', 'O', 'O', 'O'],
+                hours: 12
+            },
+            '12hour_5n5o': {
+                name: '12-Hour (5N/5O)',
+                description: '5 night shifts (12h) followed by 5 days off',
+                pattern: ['N', 'N', 'N', 'N', 'N', 'O', 'O', 'O', 'O', 'O'],
+                hours: 12
+            },
+            '12hour_7n7o': {
+                name: '12-Hour (7N/7O)',
+                description: '7 night shifts (12h) followed by 7 days off',
+                pattern: ['N', 'N', 'N', 'N', 'N', 'N', 'N', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
+                hours: 12
             }
+        }
+    }
+};
         };
 
         // ========== INITIALIZATION ==========
@@ -1798,6 +1920,9 @@
                     break;
                 case '48hour':
                     algorithm = generate48HourSchedule;
+                    break;
+                case 'mixed':
+                    algorithm = generateMixedSchedule;
                     break;
                 default:
                     algorithm = generateFairSchedule;
@@ -2142,7 +2267,98 @@
             
             return schedule;
         }
-
+        function generateMixedSchedule(startDate, days, staffCount, config) {
+        const schedule = [];
+    
+       // Extended night duty patterns
+       const nightPatterns = [
+        { name: '2N2O', pattern: ['N', 'N', 'O', 'O'], days: 4, display: 'N-2N2O' },
+        { name: '3N3O', pattern: ['N', 'N', 'N', 'O', 'O', 'O'], days: 6, display: 'N-3N3O' },
+        { name: '4N4O', pattern: ['N', 'N', 'N', 'N', 'O', 'O', 'O', 'O'], days: 8, display: 'N-4N4O' },
+        { name: '5N5O', pattern: ['N', 'N', 'N', 'N', 'N', 'O', 'O', 'O', 'O', 'O'], days: 10, display: 'N-5N5O' },
+        { name: '7N7O', pattern: ['N', 'N', 'N', 'N', 'N', 'N', 'N', 'O', 'O', 'O', 'O', 'O', 'O', 'O'], days: 14, display: 'N-7N7O' }
+    ];
+    
+      // Standard 8-hour pattern
+      const standardPattern = ['M', 'A', 'N', 'O'];
+    
+    // Assign patterns to staff members
+    const staffPatterns = [];
+    for (let i = 0; i < staffCount; i++) {
+        if (i < Math.floor(staffCount * 0.6)) { // 60% on standard shifts
+            staffPatterns.push({
+                type: 'standard',
+                pattern: standardPattern,
+                startOffset: i % standardPattern.length,
+                hours: 8
+            });
+        } else { // 40% on extended night duties
+            const patternIndex = (i - Math.floor(staffCount * 0.6)) % nightPatterns.length;
+            staffPatterns.push({
+                type: 'extended',
+                pattern: nightPatterns[patternIndex].pattern,
+                patternName: nightPatterns[patternIndex].name,
+                displayName: nightPatterns[patternIndex].display,
+                startOffset: 0,
+                hours: 12
+            });
+        }
+    }
+    
+    for (let day = 0; day < days; day++) {
+        const currentDate = startDate.plus({ days: day });
+        const dayEntry = {
+            date: currentDate.toFormat('yyyy-MM-dd'),
+            dayOfWeek: currentDate.toFormat('EEE'),
+            formattedDate: currentDate.toFormat('MMM dd'),
+            shifts: {}
+        };
+        
+        for (let i = 0; i < staffCount; i++) {
+            const staff = staffMembers[i];
+            const patternInfo = staffPatterns[i];
+            
+            let shiftType, shiftHours;
+            
+            if (patternInfo.type === 'standard') {
+                // Standard 8-hour rotation
+                const patternIndex = (day + patternInfo.startOffset) % patternInfo.pattern.length;
+                shiftType = patternInfo.pattern[patternIndex];
+                shiftHours = patternInfo.hours;
+            } else {
+                // Extended night duty pattern
+                const patternIndex = (day + patternInfo.startOffset) % patternInfo.pattern.length;
+                const baseShift = patternInfo.pattern[patternIndex];
+                
+                if (baseShift === 'N') {
+                    shiftType = patternInfo.displayName; // N-2N2O, N-3N3O, etc.
+                } else {
+                    shiftType = baseShift; // 'O' for off days
+                }
+                shiftHours = baseShift === 'N' ? patternInfo.hours : 0;
+            }
+            
+            // Check for leaves
+            const isOnLeave = checkStaffLeave(staff, currentDate);
+            if (isOnLeave) {
+                shiftType = `L-${isOnLeave}`;
+                shiftHours = 0;
+            }
+            
+            dayEntry.shifts[staff.id] = {
+                type: shiftType,
+                staffName: staff.fullName,
+                staffRank: staff.rank,
+                hours: shiftHours,
+                patternType: patternInfo.type
+            };
+        }
+        
+        schedule.push(dayEntry);
+    }
+    
+    return schedule;
+}
         function generateFairSchedule(startDate, days, staffCount, config) {
             const schedule = [];
             const shiftHours = config.shiftHours || 8;
@@ -2423,6 +2639,12 @@
 
         function getShiftClass(shiftType) {
             if (!shiftType) return '';
+         // Check for extended night patterns first
+            if (shiftType.includes('N-2N2O')) return 'shift-N-2N2O';
+            if (shiftType.includes('N-3N3O')) return 'shift-N-3N3O';
+            if (shiftType.includes('N-4N4O')) return 'shift-N-4N4O';
+            if (shiftType.includes('N-5N5O')) return 'shift-N-5N5O';
+            if (shiftType.includes('N-7N7O')) return 'shift-N-7N7O';
             
             const type = shiftType.charAt(0);
             switch(type) {
