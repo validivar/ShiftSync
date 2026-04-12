@@ -1,13 +1,21 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
+
+# Core pages
+Allow: /index.html
+Allow: /about.html
+Allow: /terms.html
+
+# Block unnecessary files
+Disallow: /cdn-cgi/
+Disallow: /*.json$
 Disallow: /private/
 
-# Crawl delay
-Crawl-delay: 1
+# Sitemap location
+Sitemap: https://www.shiftsync.world/sitemap.xml
 
-# Sitemap
-Sitemap: https://shiftsync.world/sitemap.xml
+# Crawl delay (be polite to servers)
+Crawl-delay: 10
 
 # Google-specific
 User-agent: AdsBot-Google
